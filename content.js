@@ -35,7 +35,7 @@ return text;
 
 async function getAISummary(articleText){
 
-const API_KEY = "PASTE_YOUR_APIKEY_HERE";
+const API_KEY = "AIzaSyAxw-3Or7mRDYtnUFCRr1xsTJlVNc2cjRI";
 
 try{
 
