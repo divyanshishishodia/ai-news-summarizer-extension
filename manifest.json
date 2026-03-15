@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "AI News Simplifier",
+  "version": "1.0",
+  "description": "Summarizes news articles into concise bullet points using AI",
+
+  "permissions": ["activeTab"],
+
+  "host_permissions": [
+    "*://*.bbc.com/*",
+    "*://*.cnn.com/*",
+    "*://*.reuters.com/*",
+    "*://*.nytimes.com/*",
+    "*://*.theguardian.com/*",
+
+    "*://*.ndtv.com/*",
+    "*://*.indiatoday.in/*",
+    "*://*.hindustantimes.com/*",
+    "*://*.indianexpress.com/*",
+    "*://*.timesofindia.indiatimes.com/*",
+    "*://*.thehindu.com/*",
+    "*://*.news18.com/*",
+    "*://*.economictimes.indiatimes.com/*",
+    "*://*.firstpost.com/*",
+    "*://*.scroll.in/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.bbc.com/*",
+        "*://*.cnn.com/*",
+        "*://*.reuters.com/*",
+        "*://*.nytimes.com/*",
+        "*://*.theguardian.com/*",
+
+        "*://*.ndtv.com/*",
+        "*://*.indiatoday.in/*",
+        "*://*.hindustantimes.com/*",
+        "*://*.indianexpress.com/*",
+        "*://*.timesofindia.indiatimes.com/*",
+        "*://*.thehindu.com/*",
+        "*://*.news18.com/*",
+        "*://*.economictimes.indiatimes.com/*",
+        "*://*.firstpost.com/*",
+        "*://*.scroll.in/*"
+      ],
+
+      "js": ["content.js"],
+      "css": ["sidebar.css"]
+    }
+  ]
+}
